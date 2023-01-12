@@ -1,0 +1,153 @@
+@keyframes fadein{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+    margin:auto;
+    height:99vh;
+    display:flex;
+    align-items: flex-end;
+    text-align: center;
+    color:#E94F37
+}
+
+.main{
+    margin:0 auto;
+    display:flex;
+    justify-content:space-evenly;
+    width:600px;
+    height:40px;
+    background-color:#393E41;
+    border: 2px solid #E94F37;
+    border-radius: 100px;
+}
+
+.tooltip{
+    position:absolute;
+    color:#E94F37;
+    width:35px;
+    height:35px;
+    border-radius: 100px;
+}
+
+.icon, .iconfb, .icontt{
+    position:relative;
+    width:35px;
+    height:35px;
+    margin:auto;
+    background-color:#F6F7EB;
+    border: 2px solid #E94F37;
+    border-radius: 100px;
+    padding:auto;
+}
+
+.icon:hover{
+    background-color:#C04ABC;
+    color:black;
+}
+.iconfb:hover{
+    background-color:#2335da;
+    color:black;
+}
+.icontt:hover{
+    background-color:#00b7ff;
+    color:black;
+}
+.tooltipfb:hover:before{
+    opacity:0;
+    background-color: #393E41;
+    position:absolute;
+    bottom:65px;
+    transform:translateX(-53px);
+    padding:7px 15px;
+    border: 1px solid #E94F37;
+    border-radius:10px; 
+    content:attr(data-tipface);
+    animation-name:fadein;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+.tooltipfb:hover:after{
+    opacity:0;
+    background-color: #393E41;
+    position:absolute;
+    bottom:60px;
+    padding:5px;
+    border-right: 1px solid #E94F37;
+    border-bottom: 1px solid #E94F37;
+    transform: translate(-5px, 0) rotate(45deg);
+    content:"";
+    animation-name:fadein;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.tooltiptt:hover:before{
+    background-color: #393E41;
+    position:absolute;
+    padding:7px 15px;
+    bottom:65px;
+    border: 1px solid #E94F37;
+    border-radius:10px;  
+    content:attr(data-tiptt);
+    transform:translateX(-50%);
+    animation-name:fadein;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+}
+
+.tooltiptt:hover:after{
+    background-color: #393E41;
+    position:absolute;
+    bottom:60px;
+    padding:5px;
+    border-right: 1px solid #E94F37;
+    border-bottom: 1px solid #E94F37;
+    transform:translate(-6px, 0) rotate(45deg) ;
+    content:"";
+    animation-name:fadein;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.tooltip:hover:before{
+    background-color: #393E41;
+    position:absolute;
+    bottom:50px;
+    left:-35px;
+    padding:7px 15px;
+    border: 1px solid #E94F37;
+    border-radius:10px;
+    content:attr(data-tipinsta);
+    animation-name:fadein;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+}
+
+.tooltip:hover:after{
+    background-color: #393E41;
+    position:absolute;
+    bottom:45px;
+    left:14px;
+    padding:5px;
+    border-right: 1px solid #E94F37;
+    border-bottom: 1px solid #E94F37;
+    transform:rotate(45deg);
+    content:"";
+    animation-name:fadein;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+
+.imginsta, .imgface, .imgtwit{
+    width:35px;
+    height:35px;
+}
+

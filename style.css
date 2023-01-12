@@ -1,0 +1,126 @@
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    margin:auto;
+    height:99vh;
+    display:flex;
+    align-items: flex-end;
+    text-align: center;
+    color:#E94F37
+}
+
+.main{
+    margin:0 auto;
+    display:flex;
+    justify-content:space-evenly;
+    width:600px;
+    height:40px;
+    background-color:#393E41;
+    border: 2px solid #E94F37;
+    border-radius: 100px;
+}
+
+.tooltip{
+    position:absolute;
+    color:#E94F37;
+    width:35px;
+    height:35px;
+    border-radius: 100px;
+}
+
+.icon, .iconfb, .icontt{
+    position:relative;
+    width:35px;
+    height:35px;
+    margin:auto;
+    background-color:#F6F7EB;
+    border: 2px solid #E94F37;
+    border-radius: 100px;
+    padding:auto;
+}
+
+.icon:hover{
+    background-color:#C04ABC;
+    color:black;
+}
+.iconfb:hover{
+    background-color:#2335da;
+    color:black;
+}
+.icontt:hover{
+    background-color:#00b7ff;
+    color:black;
+}
+.tooltipfb:hover:before{
+    background-color: #393E41;
+    position:absolute;
+    bottom:65px;
+    transform:translateX(-45px);
+    padding:7px 15px;
+    border: 1px solid #E94F37;
+    border-radius:10px; 
+    content:attr(data-tipface);
+}
+
+.tooltipfb:hover:after{
+    background-color: #393E41;
+    position:absolute;
+    bottom:60px;
+    padding:5px;
+    border-right: 1px solid #E94F37;
+    border-bottom: 1px solid #E94F37;
+    transform:rotate(45deg);
+    content:"";
+}
+
+.tooltiptt:hover:before{
+    background-color: #393E41;
+    position:absolute;
+    padding:7px 15px;
+    bottom:65px;
+    border: 1px solid #E94F37;
+    border-radius:10px; 
+    content:attr(data-tiptt);
+    transform:translateX(-45px);
+}
+
+.tooltiptt:hover:after{
+    background-color: #393E41;
+    position:absolute;
+    padding:5px;
+    bottom:60px;
+    border-right: 1px solid #E94F37;
+    border-bottom: 1px solid #E94F37;
+    transform:rotate(45deg);
+
+    content:"";
+}
+
+.tooltip:hover:before{
+    background-color: #393E41;
+    position:absolute;
+    bottom:50px;
+    left:-35px;
+    padding:7px 15px;
+    border: 1px solid #E94F37;
+    border-radius:10px; 
+    content:attr(data-tipinsta);
+}
+
+.tooltip:hover:after{
+    background-color: #393E41;
+    position:absolute;
+    bottom:45px;
+    left:15px;
+    padding:5px;
+    border-right: 1px solid #E94F37;
+    border-bottom: 1px solid #E94F37;
+    transform:rotate(45deg);
+    content:"";
+}
+
+
+.imginsta, .imgface, .imgtwit{
+    width:35px;
+    height:35px;
+}
